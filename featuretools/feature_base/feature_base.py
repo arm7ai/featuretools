@@ -807,7 +807,7 @@ class FeatureOutputSlice(FeatureBase):
     def get_arguments(self):
         return {
             'name': self._name,
-            'base_feature': self.base_feature,
+            'base_feature': self.base_feature.unique_name(),
             'n': self.n
         }
 
